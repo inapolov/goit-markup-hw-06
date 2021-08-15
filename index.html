@@ -377,13 +377,12 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal-close-button" data-modal-close>&#10006;</button>
-            <form action="" class="modal-form">
+            <form class="modal-form">
                 <h2 class="modal-form-text">Оставьте свои данные, мы вам перезвоним</h2>
                 
                     <label for="name" class="modal-label">Имя</label>
                     <div class="modal-for-icon">
-
-                    <input type="text" id="name" class="modal-input">
+                    <input type="text" id="name" name="name" class="modal-input">
                     <svg width="18px" height="18px" class="modal-icon">
                         <use href="./images/icons.svg#icon-person-black"></use>
                     </svg>
@@ -391,7 +390,7 @@
                 
                     <label for="phone" class="modal-label">Телефон</label>
                     <div class="modal-for-icon">
-                        <input type="tel" id="phone" class="modal-input">
+                        <input type="tel" id="phone" name="phone" class="modal-input">
                         <svg width="18px" height="18px" class="modal-icon">
                             <use href="./images/icons.svg#icon-phone-black"></use>
                         </svg>
@@ -399,19 +398,22 @@
                 
                     <label for="mail" class="modal-label">Почта</label>
                     <div class="modal-for-icon">
-                        <input type="email" id="mail" class="modal-input">
+                        <input type="email" id="mail" name="mail" class="modal-input">
                         <svg width="18px" height="18px" class="modal-icon">
                             <use href="./images/icons.svg#icon-email-black"></use>
                         </svg>
                     </div>
                 <div>
                     <label for="comment" class="modal-label">Комментарий</label>
-                    <textarea name="" id="comment" cols="30" rows="10" placeholder="Введите текст" class="modal-input-textarea"></textarea>
+                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст" class="modal-input-textarea"></textarea>
                 </div>                
-                <div class="agreement">
-                    <input type="checkbox" id="agreement" >
-                    <label for="agreement" class="modal-agreement-label">Соглашаюсь с рассылкой и принимаю <a href="#" class="agreement-link">Условия договора</a></label>
-                </div>                
+                                    
+                    <label for="agreement" class="agreement ">
+                        <input type="checkbox" id="agreement" name="agreement" class="agreement-checkbox">
+                        <span class="icon-check"></span>
+                       <span class="modal-agreement-label">Соглашаюсь с рассылкой и принимаю <a href="#" class="agreement-link">Условия договора</a></span> 
+                    </label>
+                                
                 <div class="modal-button">
                     <button type="submit" class="button ">Отправить</button>
                 </div>               

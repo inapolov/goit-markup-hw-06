@@ -25,11 +25,14 @@
             </ul>
             </nav>
              <ul class="contacts list ">
-                <li class="item"><a href="mailto:info@devstudio.com" class="link mail">
+                <li class="item">
+                    <a href="mailto:info@devstudio.com" class="link mail">
                     <svg class="envelope" width="16px" height="12px" >
                         <use href="./images/icons.svg#icon-envelope"></use>>
                     </svg>
-                   <span>info@devstudio.com</span></a></li>
+                   <span>info@devstudio.com</span>
+                </a>
+            </li>
                 <li class="item"><a href="tel:+380961111111" class="link tel">
                     <svg class="smartphone" width="10px" height="16px">
                         <use href="./images/icons.svg#icon-smartphone"></use>>
@@ -361,7 +364,11 @@
                 <form>
                     <label for="email" class="invite-title email-label">Подпишитесь на рассылку</label>
                     <input type="email" name="email" id="email" placeholder="E-mail" class="email-input">
-                    <button type="submit" class="button">Подписаться</button>
+                    <button type="submit" class="button email-button"><span>Подписаться</span>
+                        <svg width="24px" height="24px" class="icon-send">
+                            <use href="./images/icons.svg#icon-icon-send"></use>
+                        </svg>
+                    </button>
                 </form>
             </div>            
                        
